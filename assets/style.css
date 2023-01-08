@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    height: 90%;
+    min-height: 94%;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 95px;
+    text-align: center;
+    color: white;
+}
+
+.container, .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.timl_poin {
+    background-color: #1E1E1E;
+}
+
+.timr_poin {
+    background-color: #222325;
+}
+
+.poinl {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.poinr{
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.tim_l>.player {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.tim_r>.player{
+    display: grid;
+    grid-template-columns: 90% 10%; 
+}
+
+.tim_l>.player>.posisi {
+    background-color: #FFD600;
+    padding: 6px;
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tim_l>.player>.nama {
+    background-color: #222325;
+    color: white;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tim_r>.player>.posisi {
+    color: #1E1E1E;
+    background-color:#FFD600;
+    padding: 6px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tim_r>.player>.nama {
+    background-color:#535456; 
+    color: white;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer{
+    margin: auto;
+    padding: auto;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        height: 90%;
+        min-height: 94%;
+        font-size: 70px;
+        line-height: 95px;
+      }
+    
+      .poinl, .poinr {
+        font-size: 80px;
+      }
+  }
+
+@media screen and (max-width: 600px) {
+    .container {
+    height: auto;
+    font-size: 50px;
+    line-height: 65px;
+    }
+    
+    .poinl, .poinr {
+    font-size: 60px;
+    }
+    }
